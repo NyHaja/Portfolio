@@ -1,0 +1,370 @@
+:root{
+    --bg-color: #fdfdfd;    
+    --main-color: #f8320f;
+    --text-color: #333;
+    --white-color: #fdfdfd;
+    --shadow-color: rgba(0, 0, 0, .2);
+}
+
+/* 
+
+Petits écrans (mobiles) : max-width: 480px
+Mobiles moyens : min-width: 481px et max-width: 768px
+Tablettes : min-width: 769px et max-width: 1024px
+Ordinateurs portables et petits écrans : min-width: 1025px et max-width: 1366px
+Grands écrans (PC de bureau, TV) : min-width: 1367px
+
+*/
+
+/* <---------------------> Pour les écrans ordinateurs <---------------------> */
+@media only screen and (max-width: 1280px){
+    .home .hobby-container .hobby-box{
+        right: -10%;
+    }
+
+    .home .hobby-container .overlay{
+        right: -6%;
+    }
+
+    .home-img img{
+        right: 0;
+        position: absolute;
+        top: 22vh;
+        max-width: 400px;
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    .home .home-content{
+        max-width: 60rem;
+    }
+
+    .home .hobby-container .hobby-box{
+        right: -20%;
+    }
+
+    .home .hobby-container .overlay{
+        right: -15%;
+    }
+
+    .home-img img{
+        max-width: 23%;
+        top: 36vh;
+    }
+}
+
+/* <---------------------> Pour les écrans tablettes <---------------------> */
+@media  only screen and (max-width: 1060px) {
+    .navbar a:nth-child(1){
+        color: var(--main-color);
+    }
+
+    .navbar a.active::before{
+        background-color: var(--main-color);
+        opacity: .7;
+    }
+
+    .home .home-content{
+        max-width: 50rem;
+    }
+
+    .home .hobby-container .hobby-box{
+        right: -30%;
+    }
+
+    .home .hobby-container .overlay{
+        right: -25%;
+    }
+
+    .home-img img{
+        display: none;
+    }
+
+    section{
+        padding:10rem 3% 3rem;
+    }
+
+    .footer{
+        padding: 2rem 5%;
+    }
+}
+
+@media only screen and (max-width: 960px){
+    html{
+        font-size: 55%;
+    }
+    
+    .navbar a:nth-child(1){
+        color: var(--main-color);
+    }
+
+    .navbar a.active::before{
+        background-color: var(--main-color);
+        opacity: .7;
+    }
+
+    .home .home-content{
+        max-width: 40rem;
+    }
+
+    .home .hobby-container .hobby-box{
+        right: -50%;
+    }
+
+    .home .hobby-container .overlay{
+        border-left: 580px solid transparent;
+        right: -35%;
+    }
+
+    .about {
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: center;
+    }
+
+    .about-content {
+        position: absolute;
+        top: 110%;
+        left: 59.5%;
+        width: 95%;
+        height: 84vh;
+        overflow: hidden;
+    }
+
+    .about-content h2{
+        text-align: center;
+    }
+
+    .about-img img{
+        width: 56%;
+        margin: 34% 22%;
+        border-radius: 100%;
+    }
+
+    .portfolio-images {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portfolio-images img {
+        width: 90vw;
+        height: 50vh;
+    }
+
+    /* .slide1 p{
+        position: absolute;
+        top: 45%;
+        max-width: 80%;
+    } 
+
+    .portfolio-images .img2{
+        margin-top: 26rem;
+    }*/
+
+    .footer{
+        padding: 0rem 5%;
+    }
+}
+
+
+/* <---------------------> Pour les écrans mobiles <---------------------> */
+@media only screen and (max-width: 768px){
+    #menu-icon{
+        display: block;
+    }
+
+    #darkMode-icon{
+        position: absolute;
+        right:10rem;
+        font-size: 3rem;
+        color: var(--text-color);
+        margin-bottom: .1rem;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--bg-color);
+        padding: 1rem 3%;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem var(--shadow-color);
+        display: none;
+        /* transition : .5s ease; */
+    }
+
+    .navbar.active{
+        display: block;
+    }
+
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        color: var(--text-color);
+        
+    }
+
+    .navbar a:nth-child(1),
+    .navbar a:nth-child(2){
+        color: var(--text-color);
+    }
+
+    .navbar a.active{
+        color: var(--main-color);
+    }
+
+    .navbar a::before{
+        display: none;
+        
+    }
+
+    .home{
+        padding: 0 3% 23rem;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home-content h3{
+        font-size: 2.5rem;
+    }
+
+    .home-content h1{
+        font-size: 5rem;
+    }
+
+    .home-content .social-media a{
+        margin: 2.5rem .75rem 3rem;
+    }
+
+    .home .hobby-container{
+        width: 100%;
+        height: 100%;
+        top: 5rem;
+    }
+
+    .home .hobby-container .hobby-box{
+        position: fixed;
+        top: 430px;
+        left: 0;
+        width: 100%;
+    }
+
+    .home .hobby-box .hobby{
+        padding: .8rem;
+        border-radius: 2rem;
+        left: auto;
+        transform-origin: 0;
+        align-items: center;
+    }
+
+    .home .hobby-box .hobby:nth-child(1){
+        transform: rotate(-90deg) translate(-78px, -216px);
+    }
+
+    .home .hobby-box .hobby:nth-child(1) i{
+        margin-right: 5rem;
+    }
+
+    .home .hobby-box .hobby:nth-child(2){
+        transform: rotate(0deg) translate(0, -285px);
+    }
+
+    .home .hobby-box .hobby:nth-child(3){
+        transform: rotate(90deg) translate(-80px, -370px);
+    }
+
+    .home .hobby-box .hobby:nth-child(4){
+        transform: rotate(180deg) translate(-245px, -280px);
+    }
+
+    .home .hobby-box .cirlce{
+        position: fixed;
+        width: 670px;
+        height: 670px;
+        z-index: -1;
+    }
+
+    .home .hobby-container .overlay{
+        position: fixed;
+        top: 70rem;
+        left: 50%;
+        right: 0;
+        transform: rotate(90deg) translate(-28%, 50%) scaleY(3);
+        border-width: 23.9rem;
+    }
+
+    .about{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        /* align-items: center; */
+    }
+
+    .about-content h2{
+        text-align: center;
+    }
+
+    .about-img {
+        position: absolute;
+        align-self: flex-start;
+        width: 100%;
+        top: 113%;
+        left: 0;
+    }
+
+    .portfolio-box .swiper-button-next,
+    .portfolio-box .swiper-button-prev{
+        display: none;
+    }
+}
+
+/* <---------------------> Pour les écrans mobiles <---------------------> */
+@media only screen and (max-width: 660px) {
+    #menu-icon{
+        display: block;
+    }
+
+    #darkMode-icon{
+        right: 15%;
+    }
+        
+    .home {
+        padding: 0 3% 23rem;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .about-img{
+        position: absolute;
+        width: 100%;
+        top: 113%;
+        left: 0;
+    }
+
+    .about-img img{
+        width: 80%;
+        margin: 81% 0 0 0;
+    }
+
+    
+
+    footer, .info{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        text-align: center;
+    }
+
+    .network {
+        justify-content: center;
+        margin-left: 0;
+        padding-left: 0;
+        margin-top: 3vh;
+        padding-top: 3vh;
+        border-top: 2px solid var(--white-color);
+        border-left: 0;
+    }
+}

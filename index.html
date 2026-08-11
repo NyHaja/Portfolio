@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="page_title">Mon Portfolio</title>
+
+    <!-- Site Metas -->
+    <link
+      rel="icon"
+      href="assets/images/icon.ico"
+      type="image/ico"
+      alt="logo"
+    />
+
+    <!-- Link to Css -->
+    <link rel="stylesheet" href="assets/style/style.css">
+
+    <!-- Responsive Css -->
+    <link rel="stylesheet" href="assets/style/responsive.css">
+
+    <!-- Box Icons -->
+    <link rel="stylesheet" href="assets/boxicons-2.1.4/css/boxicons.min.css">
+
+    <!-- Swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <ul>
+            <li>
+                <a href="#" class="lang-link" data-lang="fr">
+                    <img src="assets/images/france.png" alt="fr" class="flag-icon" id="flag-icon-fr">
+                </a>
+            </li>
+            <li>
+                <a href="#" class="lang-link" data-lang="en">
+                    <img src="assets/images/royaume-uni.png" alt="en" class="flag-icon" id="flag-icon-en">
+                </a>
+            </li>
+        </ul>
+
+        <a href="#" class="logo">Ny Haja.</a>
+
+        <nav class="navbar">
+            <a href="#home" class="active" data-i18n="accueil">Accueil</a>
+            <a href="#about" data-i18n="a_propos">À Propos</a>
+            <a href="#experience" data-i18n="formations">Formations</a>
+            <a href="#portfolio" data-i18n="portfolio">Portfolio</a>
+            <a href="#skills" data-i18n="skills_title">Compétences</a>
+        </nav>
+
+        <div class="bx bx-moon" id="darkMode-icon"></div>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <!-- La page principale -->
+    <main>
+        <!-- [ ------------ Home Begin ------------] -->
+        <section class="home" id="home">
+            <div class="home-content">
+                <h3 data-i18n="salut">Salut, je m'appelle</h3>
+                <h1><span>Ny Haja</span> Andrianiaina</h1>
+                <p data-i18n="intro">
+                    Et bienvenue sur mon portfolio Universitaire. Je te souhaite bonne visite et n'hésite pas à me contacter si tu as des questions ou à écrire dans les commentaires ⚜️.
+                </p>
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/in/ny-haja-andrianiaina-38b490280/" target="_blank" rel="noopener"><i class="bx bxl-linkedin"></i></a>
+                    <a href="https://github.com/NyHaja" target="_blank" rel="noopener"><i class="bx bxl-github"></i></a>
+                    <a href="https://git.unistra.fr/nhnandrianiaina" target="_blank" rel="noopener"><i class="bx bxl-gitlab"></i></a>
+                </div>
+
+                <a href="assets/images/Andrianiaina Ny Haja.pdf" download="CV_Ny_Haja.pdf" class="btn" data-i18n="cv">Télécharger mon CV</a>
+            </div>
+
+            <div class="hobby-container">
+                <div class="hobby-box">
+                    <div class="hobby" style="--i:0;">
+                        <i class='bx bx-code-block'></i>
+                        <h3>HardWare</h3>
+                    </div>
+                    <div class="hobby" style="--i:1;">
+                        <i class='bx bx-code-alt' ></i>
+                        <h3>SoftWare</h3>
+                    </div>
+                    <div class="hobby" style="--i:2;">
+                        <i class='bx bx-network-chart' ></i>
+                        <h3 data-i18n="reseau">Réseaux IP</h3>
+                    </div>
+                    <div class="hobby" style="--i:3;">
+                        <i class='bx bx-tennis-ball' ></i>
+                        <h3 data-i18n="volley">Volley-Ball</h3>
+                    </div>
+                    <div class="circle"></div>
+                </div>
+                <div class="overlay"></div>
+            </div>
+
+            <div class="home-img">
+                <img src="assets/images/portfolio.png" alt="">
+            </div>
+        </section>
+        <!-- [ ------------ Home End ------------] -->
+
+        <!-- [ ------------ About Begin ------------] -->
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="assets/images/IMG-20230529-WA0029.jpg" alt="Ny Haja Andrianiaina">
+            </div>
+
+            <div class="about-content">
+                <h2 class="heading"><span class="i18n-plain" data-i18n="qui">Qui</span><span data-i18n="suis_je"> suis je ?</span></h2>
+                <p data-i18n="presentation1">
+                    Je suis étudiant en Master informatique, et développer des applications ou des logiciels est l'une de mes plus grandes fiertés et motivations. Je m'intéresse particulièrement au développement et aux réseaux : j'aime autant coder des applications que comprendre comment tout communique derrière, du câblage jusqu'aux protocoles. Chaque jour m'apporte une nouvelle façon d'améliorer mes compétences et de construire quelque chose de concret, avec l'objectif d'aller loin dans ce métier et de devenir un développeur senior solide, à l'aise aussi bien sur le code que sur l'infrastructure réseau.
+                </p>
+                <p data-i18n="presentation2"></p>
+            </div>
+        </section>
+
+        <section class="experience" id="experience">
+            <h2 class="heading" data-i18n="formation">Mes Formations</h2>
+
+            <div class="experience-container">
+                <div class="experience-box">
+                    <i class='bx bx-shape-circle'></i><h3 data-i18n="premiere">1ère année Informatique</h3>
+                    <p>
+                        <span class="i18n-plain" data-i18n="cours">Durant la première année, nous avons suivi un tronc commun incluant les mathématiques lors du premier semestre. Au second semestre, nous avons commencé à nous spécialiser en informatique. On a étudié les bases de la programmation en langage C, les bases de données, la gestion de projet et la programmation web.</span>
+                    </p>
+                </div>
+                <div class="experience-box">
+                    <i class='bx bx-shape-polygon'></i><h3 data-i18n="deuxieme">2ème année Informatique</h3>
+                    <p>
+                        <span class="i18n-plain" data-i18n="cours2">Durant le second semestre, nous avons approfondi nos connaissances en informatique à travers plusieurs matières essentielles. Nous avons étudié l'Architecture des Ordinateurs pour mieux comprendre le fonctionnement interne des machines, les Structures de Données en langage C et la programmation Orientée Objet en JAVA.</span>
+                    </p>
+                </div>
+                <div class="experience-box">
+                    <i class='bx bx-shape-triangle'></i><h3 data-i18n="troisieme">3ème année Informatique</h3>
+                    <p>
+                        <span class="i18n-plain" data-i18n="cours3_s1">Durant le premier semestre, nous avons étudié l'architecture des Systèmes d'Exploitation et leur fonctionnement, ainsi que les algorithmes de parcours et de réseaux.</span>
+                        <br><br>
+                        <span class="i18n-plain" data-i18n="cours3_s2">Au second semestre, nous avons développé, en équipe de 8 personnes, un projet nommé Miniville, ainsi que les mécanismes de communication au sein d'un réseau local (LAN, VLAN).</span>
+                    </p>
+                </div>
+            </div>
+
+        </section>
+        <!-- [ ------------ About End ------------] -->
+
+        <!-- [ ------------ Portfolio Begin ------------] -->
+        <section class="portfolio" id="portfolio">
+            <h2 class="heading">Portfolio : <span data-i18n="projet">Projets Universitaires</span></h2>
+            <div class="portlfolio-container">
+                <article class="portfolio-box mySwiper">
+                    <div class="portfolio-content swiper-wrapper">
+
+                        <section class="portfolio-slide swiper-slide">
+                            <h2><i class='bx bx-game' style='color:rgb(17, 121, 17)' ></i><span class="i18n-plain" data-i18n="titre1">Sokoban</span> - Dev</h2>
+                            <div class="portfolio-images">
+                                <img src="assets/images/sokoban.png" alt="sokoban sur console" class="img1">
+                                <img src="assets/images/sokoban_sdl2.png" alt="sokoban avec interface graphique" class="img2">
+                            </div>
+                            <p>
+                                <span class="i18n-plain" data-i18n="desc1.1">Sokoban est un jeu de réflexion dans lequel le joueur doit pousser des caisses pour les placer sur des cases cibles. La modélisation de ce jeu a été réalisée </span><span class="bold">(<span data-i18n="C"> en C </span>)</span><span class="i18n-plain" data-i18n="desc1.2"> avec une interface graphique développée à l'aide de la </span> <span class="bold" data-i18n="sdl">bibliothèque SDL2</span>,<span class="i18n-plain" data-i18n="desc1.3"> et une option pour jouer directement via le terminal</span>
+                            </p>
+                            <p class="demo">
+                                <span>Git : </span><a href="https://git.unistra.fr/razafindrambola/sokoban" target="_blank" rel="noopener">Code</a>
+                            </p>
+                        </section>
+
+                        <section class="portfolio-slide swiper-slide">
+                            <h2><i class='bx bx-planet' style="color: rgb(245, 159, 61);"></i><span class="i18n-plain" data-i18n="titre2">Réseau IP - Traduction d'adresse IP</span></h2>
+                            <div class="portfolio-images">
+                                <img src="assets/images/imgNat.png" alt="">
+                            </div>
+                            <p>
+                                <span class="i18n-plain" data-i18n="desc2.1">Ce projet consiste à réaliser une traduction d'adresses réseaux en utilisant les </span><span class="bold" data-i18n="IP">Protocol IP. </span><span class="i18n-plain" data-i18n="desc2.2">Il s'agit de mettre en place un réseau local avec des machines virtuelles et de </span><span data-i18n="routeur">configurer un routeur</span><span class="i18n-plain" data-i18n="desc2.3"> pour permettre la communication entre les machines.</span>
+                            </p>
+                            <p class="demo">
+                                Demo : <a href="#" id="openModal"><span data-i18n="clique">Cliquez ici</span></a>
+                            </p>
+                            <div class="modal" id="videoModal">
+                                <div class="modal-content">
+                                    <span class="close" id="closeModal">&times;</span>
+                                    <video controls width="640">
+                                        <source src="assets/images/configurationNAT.webm" type="video/webm">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="portfolio-slide swiper-slide">
+                            <h2><i class='bx bxs-leaf' style="color: rgb(56, 230, 3);"></i><span class="i18n-plain" data-i18n="titre3">Arbre Généalogique - Structure de Données Algorithmiques</span></h2>
+                            <div class="portfolio-images">
+                                <img src="assets/images/généalogique.png" alt="">
+                            </div>
+                            <p>
+                               <span class="i18n-plain" data-i18n="desc3.1">Ce projet consiste à modéliser un arbre généalogique en utilisant des structures de données algorithmiques. Il a été réalisé en C avec les </span><span class="bold" data-i18n="liste">Tables, Listes</span>
+                               <span class="i18n-plain" data-i18n="desc3.2"> et en implémentant des algorithmes de recherche et de parcours d'arbre avec la </span><span class="bold" data-i18n="dicho"> recherche dichotomique </span><span class="i18n-plain" data-i18n="et"> et </span><span class="bold" data-i18n="profondeur">la recherche en profondeur</span>.
+                            </p>
+                            <p class="demo">
+                                <span>Git : </span><a href="https://github.com/NyHaja/Arbre_Genealogique" target="_blank" rel="noopener">Code</a>
+                            </p>
+                        </section>
+
+                        <section class="portfolio-slide swiper-slide">
+                            <h2><i class='bx bx-buildings' style="color: rgb(41, 121, 255);"></i><span class="i18n-plain" data-i18n="titre_miniville">Minivilles Deluxe</span></h2>
+                            <div class="portfolio-images">
+                                <img src="assets/images/Minivilles_accueil.png" alt="Écran d'accueil de Minivilles Deluxe">
+                                <img src="assets/images/table_jeu.png" alt="Plateau de jeu de Minivilles Deluxe">
+                            </div>
+                            <p>
+                                <span class="i18n-plain" data-i18n="desc_miniville_1">Minivilles Deluxe est une adaptation multijoueur en ligne du jeu de plateau Machi Koro, réalisée comme projet intégrateur universitaire. Techniquement, il repose sur une architecture client-serveur en </span><span class="bold" data-i18n="miniville_godot">Godot 4 / GDScript</span><span class="i18n-plain" data-i18n="desc_miniville_2"> côté serveur headless, avec un backend </span><span class="bold" data-i18n="miniville_flask">Flask (Python)</span><span class="i18n-plain" data-i18n="desc_miniville_3"> et une base </span><span class="bold" data-i18n="miniville_mysql">MySQL</span><span class="i18n-plain" data-i18n="desc_miniville_4">, le tout déployé sur deux VMs </span><span class="bold" data-i18n="miniville_openstack">OpenStack</span><span class="i18n-plain" data-i18n="desc_miniville_5">. Le projet a été réalisé en équipe de 8 personnes.</span>
+                            </p>
+                            <p class="demo">
+                                <span>Git : </span><a href="https://git.unistra.fr/groupe-7a-projet-integrateur/miniville" target="_blank" rel="noopener">Code</a>
+                            </p>
+                        </section>
+                    </div>
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </article>
+            </div>
+        </section>
+        <!-- [ ------------ Portfolio End ------------] -->
+
+        <!-- [ ------------ Compétences Begin ------------] -->
+        <section class="skills" id="skills">
+            <h2 class="heading" data-i18n="skills_title">Compétences</h2>
+
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3 data-i18n="skills_langages_title">Langages</h3>
+                    <ul class="skills-list">
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+                <div class="skills-category">
+                    <h3 data-i18n="skills_bdd_title">Bases de données</h3>
+                    <ul class="skills-list">
+                        <li>PostgreSQL</li>
+                        <li>MySQL</li>
+                        <li>SQLite</li>
+                    </ul>
+                </div>
+                <div class="skills-category">
+                    <h3 data-i18n="skills_web_title">Outils et Web</h3>
+                    <ul class="skills-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>PHP</li>
+                        <li>Git</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- [ ------------ Compétences End ------------] -->
+    </main>
+    <!-- Fin de la page principale -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="info">
+            <div class="name">
+                <h3 class="title">Ny Haja <br>Andrianiaina</h3>
+            </div>
+
+            <div class="network">
+                <h3 class="title" data-i18n="contact">Contact</h3>
+                <ul class="social-media">
+                    <li><a href="mailto:nyhaja@yahoo.com"><i class='bx bxl-yahoo' style='color:#ffffff' ></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/ny-haja-andrianiaina-38b490280/" target="_blank" rel="noopener"><i class='bx bxl-linkedin' style="color:#ffffff" ></i></a></li>
+                    <li><a href="https://github.com/NyHaja" target="_blank" rel="noopener"><i class='bx bxl-github' style="color:#ffffff" ></i></a></li>
+                    <li><a href="https://git.unistra.fr/nhnandrianiaina" target="_blank" rel="noopener"><i class='bx bxl-gitlab' style="color:#ffffff" ></i></a></li>
+                </ul>
+                <ul class="phone">
+                    <li><i class="bx bx-phone-call"></i> +33 (0)6 44 07 74 76</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; <span id="year" class="i18n-plain">2026</span> <span class="i18n-plain" data-i18n="copyright">Tous droits réservés</span>.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
+    </footer>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Swiper Js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Gestion des langues (FR/EN) -->
+    <script src="assets/js/i18n.js"></script>
+
+    <!-- Custom Js File -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
