@@ -17,7 +17,7 @@ const STRAD = {
 
         // Accueil
         salut: "Salut, je m'appelle",
-        intro: "Et bienvenue sur mon portfolio Universitaire. Je te souhaite bonne visite et n'hésite pas à me contacter si tu as des questions ou à écrire dans les commentaires ⚜️.",
+        intro: "Et bienvenue sur mon portfolio Universitaire. Ici tu touveras mes projets et réalisations, mes compétences et mes expériences. Je te souhaite bonne visite ⚜️.",
         cv: "Télécharger mon CV",
         reseau: "Réseaux IP",
         volley: "Volley-Ball",
@@ -97,7 +97,7 @@ const STRAD = {
 
         // Home
         salut: "Hi, I'm",
-        intro: "And welcome to my University portfolio. I wish you a pleasant visit and feel free to contact me if you have any questions or write comments ⚜️.",
+        intro: "And welcome to my University Portfolio. Here, you will find my projects and achievements, my skills, and my experiences. I hope you enjoy your visit ⚜️.",
         cv: "Download my CV",
         reseau: "Network IP",
         volley: "Volley-Ball",
