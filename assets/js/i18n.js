@@ -17,7 +17,7 @@ const STRAD = {
 
         // Accueil
         salut: "Salut, je m'appelle",
-        intro: "Et bienvenue sur mon portfolio Universitaire. Ici tu touveras mes projets et réalisations, mes compétences et mes expériences. Je te souhaite bonne visite ⚜️.",
+        intro: "Et bienvenue sur mon portfolio Universitaire. Ici tu trouveras mes projets et réalisations, mes compétences et mes expériences. Je te souhaite bonne visite ⚜️.",
         cv: "Télécharger mon CV",
         reseau: "Réseaux IP",
         volley: "Volley-Ball",
