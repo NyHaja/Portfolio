@@ -450,46 +450,62 @@ span{
 
 }
 
-.experience .experience-container{
+.experience .fe-container{
     display: flex;
     justify-content: center;
     align-items: stretch;
     flex-wrap: wrap;
+    gap: 3rem;
+    max-width: 110rem;
+    margin: 0 auto;
+}
+
+.fe-block{
+    flex: 1 1 40rem;
+    background: var(--bg-color);
+    padding: 3rem 2.5rem;
+    border-radius: 2rem;
+    box-shadow: 0 .1rem .5rem var(--shadow-color);
+    border-top: .6rem solid var(--main-color);
+    border-bottom: .6rem solid var(--main-color);
+}
+
+.fe-block-title{
+    font-size: 2.2rem;
+    color: var(--main-color);
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.fe-list{
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
 }
 
-.experience-container .experience-box{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex: 1 1 30rem;
-    background: var(--bg-color);
-    padding: 3rem 2rem 4rem;
-    border-radius: 2rem;
-    box-shadow: 0 .1rem .5rem var(--shadow-color);
-    text-align: center;
-    border-top: .6rem solid var(--main-color);
-    border-bottom: .6rem solid var(--main-color);
-    transition: .5rem ease;
+.fe-item{
+    border-left: .3rem solid var(--main-color);
+    padding-left: 1.5rem;
+    text-align: left;
 }
 
-.experience-box i{
-    font-size: 7rem;
+.fe-item h4{
+    font-size: 1.8rem;
+    color: var(--text-color);
+}
+
+.fe-item .fe-date{
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 600;
     color: var(--main-color);
+    margin: .3rem 0;
 }
 
-.experience-box h3{
-    font-size:2rem;
-    transition: .5s ease;
-}
-
-.service-box h3{
-    color: var(--main-color);
-}
-
-.experience-box p{
-    font-size: 1.6rem;
-    margin-top: 1rem;
+.fe-item p{
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-top: .3rem;
 }
 
 /* ----------------------- Style Portfolio ------------------------*/
@@ -576,10 +592,11 @@ span{
 }
 
 .portfolio-slide img{
-    width: 50rem;
-    height: 40rem;
-    object-fit: cover; /* permet d'assurer que le contenu visuel remplit entièrement son conteneur, tout en conservant ses proportions */
-    object-position: center;
+    width: auto;
+    height: auto;
+    max-width: 50rem;
+    max-height: 40rem;
+    object-fit: contain; /* l'image entière reste visible, sans découpe, selon ses proportions d'origine */
     border-radius: 1rem;
     transition: .5s ease;
     border: .5rem solid var(--bg-color);
