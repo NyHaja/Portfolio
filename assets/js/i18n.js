@@ -202,19 +202,26 @@ const STRAD = {
 const SUPPORTED_LANGS = ["fr", "en"];
 const DEFAULT_LANG = "fr";
 
+// fonction qui récupère la langue préférée dans localStorage
 function getStoredLang() {
-    const stored = localStorage.getItem("lang");
-    return SUPPORTED_LANGS.includes(stored) ? stored : DEFAULT_LANG;
+    const stored = localStorage.getItem("lang");    // on récupère la langue configurée dans localStorage
+    return SUPPORTED_LANGS.includes(stored) ? stored : DEFAULT_LANG; // si la langue est définie dans localStorage, on la prend, sinon on prend la langue par défaut
 }
 
 function applyLanguage(lang) {
     if (!SUPPORTED_LANGS.includes(lang)) lang = DEFAULT_LANG;
 
-    const dict = STRAD[lang];
+    const dict = STRAD[lang];   // une variable qui contient les dictionnaires de traduction en fonction de la langue
 
+    /** 
+    * On selectionne tous les éléments avec l'attribut data-i18n. Le resultat est une liste d'éléments HTML.
+    * Ensuite, on parcourt cette liste et on exécute le bloc une fois pour chaque élément HTML. el est l'élément HTML actuel.
+    * 
+    */
     document.querySelectorAll("[data-i18n]").forEach((el) => {
-        const key = el.getAttribute("data-i18n");
+        const key = el.getAttribute("data-i18n");   // on récupère l'attribut data-i18n de l'élément HTML actuel et on l'assigne à la variable key
         if (Object.prototype.hasOwnProperty.call(dict, key)) {
+            // si la clé existe dans le dictionnaire, on l'assigne à la variable el
             el.textContent = dict[key];
         }
     });

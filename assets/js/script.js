@@ -2,6 +2,7 @@
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
+// 
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
@@ -17,11 +18,11 @@ window.onscroll = () => {
         let height = section.offsetHeight;
         let id = section.getAttribute('id');
 
-        if (top >= offset && top < offset + height) {
+        if (id && top >= offset && top < offset + height) {
             navLinks.forEach(links => {
                 links.classList.remove('active');
-                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
             });
+            document.querySelector(`header nav a[href="#${id}"]`)?.classList.add('active');
         };
     });
 
@@ -33,7 +34,7 @@ window.onscroll = () => {
 }
 
 // Gestion de la vidéo
-// Ourir la modale
+// Ouvrir la modale
 document.getElementById("openModal").addEventListener("click", function(event) {
     event.preventDefault(); // Empêche le comportement par défaut du lien
     document.getElementById("videoModal").style.display = "block";
