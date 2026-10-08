@@ -524,6 +524,11 @@ span{
     animation: moveBackground 50s linear infinite;
 }
 
+/* Fond sombre de la section portfolio en mode nuit */
+.dark-mode .portfolio{
+    background-image: url(../images/bkgr_squart_dark.svg);
+}
+
 @keyframes moveBackground{
     0%{
         background-position: 0 0;   /* position de départ */
@@ -545,6 +550,9 @@ span{
     font-size: 4.5rem;
     text-align: center;
     color: #0b061f;
+}
+.dark-mode .portfolio .heading{
+    color: var(--text-color);
 }
 .portfolio .heading span{
     color: var(--main-color)
@@ -770,6 +778,12 @@ span{
     font-weight: 600;
     padding: .6rem 1.4rem;
     border-radius: 2rem;
+}
+
+.skills-list .skill-svg{
+    width: 1em;
+    height: 1em;
+    vertical-align: -.125em;
 }
 
 .footer{

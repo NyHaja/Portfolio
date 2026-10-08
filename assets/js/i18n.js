@@ -93,7 +93,8 @@ const STRAD = {
 
         // Compétences
         skills_title: "Compétences",
-        skills_langages_title: "Langages & Frameworks",
+        skills_langages_title: "Langages",
+        skills_frameworks_title: "Frameworks",
         skills_bdd_title: "Bases de données",
         skills_web_title: "Outils et Web",
 
@@ -190,7 +191,8 @@ const STRAD = {
 
         // Skills
         skills_title: "Skills",
-        skills_langages_title: "Languages & Frameworks",
+        skills_langages_title: "Languages",
+        skills_frameworks_title: "Frameworks",
         skills_bdd_title: "Databases",
         skills_web_title: "Tools & Web",
 
